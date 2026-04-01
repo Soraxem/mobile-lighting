@@ -1,3 +1,3 @@
 [submodule "artman.git"]
 	path = artman
-	url = git@github.com:Soraxem/artman.git
+	url = https://github.com/Soraxem/artman.git
