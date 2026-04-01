@@ -16,3 +16,4 @@ services:
       - ./qlc-configs/active.qxw:/QLC/qlc.qxw
     ports:
       - "80:9999"
+    restart: always
