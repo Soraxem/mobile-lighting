@@ -1,0 +1,3 @@
+[submodule "artman"]
+	path = artman
+	url = https://github.com/Soraxem/artman.git
