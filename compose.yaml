@@ -8,18 +8,26 @@ services:
     network_mode: host
     restart: always
 
-  qlc-plus:
-    image: averyout48/qlc-plus-docker
-    depends_on:
-      - artman
-    volumes:
-      - ./qlc-configs/active.qxw:/QLC/qlc.qxw
+  qlcplus:
+    image: scotttag/qlcplus-docker
     ports:
-      - "80:9999"
+      - "5800:5800"  # Web interface
+      - "5900:5900"  # VNC
+      - "80:9999"  # QLC+ web server
+    volumes:
+      - ./qlc-configs:/data:rw
+      - ./qlc-fixtures:/usr/share/qlcplus/fixtures/custom:ro
+    environment:
+      - QLC_WEB_SERVER=true
+      - WORKSPACE_FILE=/data/active.qxw
+      - OPERATE_MODE=true 
     restart: always
     networks:
       network:
         ipv4_address: 172.18.0.3
+
+volumes:
+  qlcplus-data:
 networks:
   network:
     driver: bridge
