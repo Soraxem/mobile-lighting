@@ -6,7 +6,7 @@ services:
     volumes:
       - ./artman/:/app
     network_mode: host
-    restart: always
+    restart: unless-stopped
 
   qlcplus:
     image: scotttag/qlcplus-docker
@@ -21,7 +21,7 @@ services:
       - QLC_WEB_SERVER=true
       - WORKSPACE_FILE=/data/active.qxw
       - OPERATE_MODE=true 
-    restart: always
+    restart: unless-stopped
     networks:
       network:
         ipv4_address: 172.55.0.2
