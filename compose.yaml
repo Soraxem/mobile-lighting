@@ -5,12 +5,8 @@ services:
       dockerfile: dockerfile
     volumes:
       - ./artman/:/app
-    ports:
-      - "6454:6454/udp"
+    network_mode: host
     restart: always
-    networks:
-      network:
-        ipv4_address: 172.18.0.2
 
   qlc-plus:
     image: averyout48/qlc-plus-docker
@@ -30,3 +26,4 @@ networks:
     ipam:
       config:
         - subnet: 172.18.0.0/24
+
