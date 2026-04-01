@@ -5,7 +5,8 @@ services:
       dockerfile: dockerfile
     volumes:
       - ./artman/:/app
-    network_mode: host
+    ports:
+      - "6454:6454/udp"
     restart: always
     networks:
       network:
