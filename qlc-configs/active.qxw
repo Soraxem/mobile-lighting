@@ -9,25 +9,14 @@
  <Engine>
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
-   <Universe Name="Spots" ID="0">
-    <Output Plugin="ArtNet" UID="192.168.178.10" Line="6">
-     <PluginParameters outputIP="192.168.178.102" outputUni="1"/>
-    </Output>
-   </Universe>
-   <Universe Name="Moving" ID="1">
-    <Output Plugin="ArtNet" UID="127.0.0.1" Line="0"/>
-   </Universe>
-   <Universe Name="Special" ID="2">
-    <Output Plugin="ArtNet" UID="127.0.0.1" Line="0"/>
-   </Universe>
-   <Universe Name="Reserve" ID="3">
-    <Output Plugin="ArtNet" UID="127.0.0.1" Line="0"/>
-   </Universe>
-   <Universe Name="Reserve" ID="4"/>
-   <Universe Name="Stringlights" ID="5"/>
+   <Universe Name="Unused" ID="0"/>
+   <Universe Name="1 Spots" ID="1"/>
+   <Universe Name="2 Moving" ID="2"/>
+   <Universe Name="3 Special" ID="3"/>
+   <Universe Name="4 Reserve" ID="4"/>
+   <Universe Name="5 Stringlights" ID="5"/>
    <Universe Name="Universe 7" ID="6"/>
    <Universe Name="Universe 8" ID="7"/>
-   <Universe Name="Universe 9" ID="8"/>
   </InputOutputMap>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
