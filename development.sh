@@ -2,4 +2,4 @@
 
 git submodule update --init --recursive
 
-sudo docker compose up
+sudo docker compose up -f development.yaml
