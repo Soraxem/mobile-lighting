@@ -1,72 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.14.4</Version>
-  <Author></Author>
+  <Version>4.14.3</Version>
+  <Author>Samuel Hafen</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
-   <NetworkServer Type="Native" AutoStart="False" Name="" Password=""/>
    <Universe Name="1 Spots" ID="0">
-    <Output Plugin="ArtNet" UID="172.55.0.2" Line="1">
+    <Output Plugin="ArtNet" UID="172.17.0.1" Line="1">
      <PluginParameters outputIP="172.55.0.1" outputUni="1"/>
     </Output>
    </Universe>
    <Universe Name="2 Moving" ID="1">
-    <Output Plugin="ArtNet" UID="172.55.0.2" Line="1">
+    <Output Plugin="ArtNet" UID="172.17.0.1" Line="1">
      <PluginParameters outputIP="172.55.0.1" outputUni="2"/>
     </Output>
    </Universe>
    <Universe Name="3 Special" ID="2">
-    <Output Plugin="ArtNet" UID="172.55.0.2" Line="1">
+    <Output Plugin="ArtNet" UID="172.17.0.1" Line="1">
      <PluginParameters outputIP="172.55.0.1" outputUni="3"/>
     </Output>
    </Universe>
    <Universe Name="4 Reserve" ID="3">
-    <Output Plugin="ArtNet" UID="172.55.0.2" Line="1">
+    <Output Plugin="ArtNet" UID="172.17.0.1" Line="1">
      <PluginParameters outputIP="172.55.0.1" outputUni="4"/>
     </Output>
    </Universe>
    <Universe Name="5 Reserve" ID="4">
-    <Output Plugin="ArtNet" UID="172.55.0.2" Line="1">
+    <Output Plugin="ArtNet" UID="172.17.0.1" Line="1">
      <PluginParameters outputIP="172.55.0.1" outputUni="5"/>
     </Output>
    </Universe>
    <Universe Name="6 Stringlights" ID="5">
-    <Output Plugin="ArtNet" UID="172.55.0.2" Line="1">
+    <Output Plugin="ArtNet" UID="172.17.0.1" Line="1">
      <PluginParameters outputIP="172.55.0.1" outputUni="6"/>
     </Output>
    </Universe>
    <Universe Name="7 Stringlights" ID="6">
-    <Output Plugin="ArtNet" UID="172.55.0.2" Line="1">
+    <Output Plugin="ArtNet" UID="172.17.0.1" Line="1">
      <PluginParameters outputIP="172.55.0.1" outputUni="7"/>
     </Output>
    </Universe>
    <Universe Name="8 Stringlights" ID="7">
-    <Output Plugin="ArtNet" UID="172.55.0.2" Line="1">
+    <Output Plugin="ArtNet" UID="172.17.0.1" Line="1">
      <PluginParameters outputIP="172.55.0.1" outputUni="8"/>
     </Output>
    </Universe>
    <Universe Name="9 Stringlights" ID="8">
-    <Output Plugin="ArtNet" UID="172.55.0.2" Line="1">
+    <Output Plugin="ArtNet" UID="172.17.0.1" Line="1">
      <PluginParameters outputIP="172.55.0.1" outputUni="9"/>
     </Output>
    </Universe>
    <Universe Name="10 Stringlights" ID="9">
-    <Output Plugin="ArtNet" UID="172.55.0.2" Line="1">
+    <Output Plugin="ArtNet" UID="172.17.0.1" Line="1">
      <PluginParameters outputIP="172.55.0.1" outputUni="10"/>
     </Output>
    </Universe>
    <Universe Name="11 Stringlights" ID="10">
-    <Output Plugin="ArtNet" UID="172.55.0.2" Line="1">
+    <Output Plugin="ArtNet" UID="172.17.0.1" Line="1">
      <PluginParameters outputIP="172.55.0.1" outputUni="11"/>
     </Output>
    </Universe>
    <Universe Name="12 Stringlights" ID="11">
-    <Output Plugin="ArtNet" UID="172.55.0.2" Line="1">
+    <Output Plugin="ArtNet" UID="172.17.0.1" Line="1">
      <PluginParameters outputIP="172.55.0.1" outputUni="12"/>
     </Output>
    </Universe>
@@ -1454,22 +1453,26 @@
   <ChannelsGroup ID="0" Name="Spots Red" Value="0">20,0,21,0,22,0,23,0,24,0,25,0,26,0,27,0,28,0,29,0,30,0,31,0</ChannelsGroup>
   <ChannelsGroup ID="1" Name="Spots Green" Value="0">20,1,21,1,22,1,23,1,24,1,25,1,26,1,27,1,28,1,29,1,30,1,31,1</ChannelsGroup>
   <ChannelsGroup ID="2" Name="Spots Blue" Value="0">20,2,21,2,22,2,23,2,24,2,25,2,26,2,27,2,28,2,29,2,30,2,31,2</ChannelsGroup>
-  <Function ID="0" Type="RGBMatrix" Name="stringlight-fire" Path="plasmas">
+  <ChannelsGroup ID="3" Name="ColdWhite" Value="0">20,3,21,3,22,3,23,3,24,3,25,3,26,3,27,3,28,3,29,3,30,3,31,3</ChannelsGroup>
+  <ChannelsGroup ID="4" Name="WarmWhite" Value="0">20,4,21,4,22,4,23,4,24,4,25,4,26,4,27,4,28,4,29,4,30,4,31,4</ChannelsGroup>
+  <ChannelsGroup ID="5" Name="Spots Amber" Value="0">20,5,21,5,22,5,23,5,24,5,25,5,26,5,27,5,28,5,29,5,30,5,31,5</ChannelsGroup>
+  <ChannelsGroup ID="6" Name="Spots UV" Value="0">20,6,21,6,22,6,23,6,24,6,25,6,26,6,27,6,28,6,29,6,30,6,31,6</ChannelsGroup>
+  <Function ID="0" Type="RGBMatrix" Name="stringlight" Path="fire">
    <Speed FadeIn="0" FadeOut="0" Duration="40"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Plasma</Algorithm>
    <Color Index="0">4294901760</Color>
-   <Color Index="1">4293288192</Color>
-   <Color Index="2">4294966528</Color>
+   <Color Index="1">4291345920</Color>
+   <Color Index="2">4291184128</Color>
    <Color Index="3">4294901760</Color>
    <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
    <Property Name="presetIndex" Value="User Defined"/>
    <Property Name="presetSize" Value="20"/>
-   <Property Name="ramp" Value="13"/>
-   <Property Name="stepsize" Value="13"/>
+   <Property Name="ramp" Value="25"/>
+   <Property Name="stepsize" Value="19"/>
   </Function>
   <Function ID="1" Type="RGBMatrix" Name="sequential-spots" Path="show">
    <Speed FadeIn="160" FadeOut="0" Duration="410"/>
@@ -1482,31 +1485,33 @@
    <FixtureGroup>1</FixtureGroup>
    <Property Name="orientation" Value="Horizontal"/>
   </Function>
-  <Function ID="2" Type="RGBMatrix" Name="spots-fire" Path="plasmas">
+  <Function ID="2" Type="RGBMatrix" Name="spots-red" Path="fire">
    <Speed FadeIn="0" FadeOut="0" Duration="40"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Plasma</Algorithm>
-   <Color Index="0">4292420118</Color>
-   <Color Index="1">4294945280</Color>
-   <Color Index="2">4294967040</Color>
-   <Color Index="3">4292420118</Color>
-   <Color Index="4">4286907396</Color>
+   <Color Index="0">4294901760</Color>
+   <Color Index="1">4281794560</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetSize" Value="20"/>
-   <Property Name="ramp" Value="10"/>
-   <Property Name="stepsize" Value="1"/>
+   <Property Name="presetIndex" Value="User Defined"/>
+   <Property Name="presetSize" Value="5"/>
+   <Property Name="ramp" Value="30"/>
+   <Property Name="stepsize" Value="37"/>
   </Function>
-  <Function ID="3" Type="Collection" Name="all-fire">
+  <Function ID="3" Type="Collection" Name="all-fire" Path="Presented">
    <Step Number="0">2</Step>
    <Step Number="1">0</Step>
+   <Step Number="2">16</Step>
   </Function>
-  <Function ID="4" Type="RGBMatrix" Name="stringlight-glitter-mask" Path="plasmas" BlendMode="Subtractive">
-   <Speed FadeIn="0" FadeOut="0" Duration="60"/>
+  <Function ID="4" Type="RGBMatrix" Name="line-switching" Path="Masks" BlendMode="Mask">
+   <Speed FadeIn="80" FadeOut="80" Duration="480"/>
    <Direction>Backward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Vertical fall</Algorithm>
+   <Algorithm Type="Script">Even/Odd</Algorithm>
    <Color Index="0">4294967295</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
@@ -1529,10 +1534,10 @@
    <Property Name="stepsize" Value="21"/>
   </Function>
   <Function ID="6" Type="RGBMatrix" Name="stringlight-rainbow" Path="plasmas">
-   <Speed FadeIn="0" FadeOut="0" Duration="40"/>
+   <Speed FadeIn="80" FadeOut="0" Duration="80"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Plasma</Algorithm>
+   <Algorithm Type="Script">Gradient</Algorithm>
    <Color Index="0">4294901760</Color>
    <Color Index="1">4278255360</Color>
    <Color Index="2">4278190335</Color>
@@ -1540,21 +1545,22 @@
    <Color Index="4">4294967295</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="orientation" Value="Horizontal"/>
    <Property Name="presetIndex" Value="Rainbow"/>
-   <Property Name="presetSize" Value="20"/>
-   <Property Name="ramp" Value="19"/>
-   <Property Name="stepsize" Value="14"/>
+   <Property Name="presetSize" Value="15"/>
   </Function>
-  <Function ID="7" Type="Collection" Name="stringlight-abstract-glitter">
+  <Function ID="7" Type="Collection" Name="all-abstract" Path="Presented">
    <Step Number="0">5</Step>
-   <Step Number="1">4</Step>
+   <Step Number="1">17</Step>
+   <Step Number="2">19</Step>
   </Function>
-  <Function ID="8" Type="Collection" Name="stringlight-rainbow-glitter">
+  <Function ID="8" Type="Collection" Name="all-rainbow" Path="Presented">
    <Step Number="0">6</Step>
    <Step Number="1">4</Step>
+   <Step Number="2">18</Step>
   </Function>
   <Function ID="9" Type="RGBMatrix" Name="stringlight-spekles-green" Path="show">
-   <Speed FadeIn="80" FadeOut="0" Duration="80"/>
+   <Speed FadeIn="100" FadeOut="0" Duration="100"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <Algorithm Type="Script">Fireworks</Algorithm>
@@ -1568,13 +1574,13 @@
    <Property Name="rocketCount" Value="7"/>
    <Property Name="triggerPoint" Value="Centered Third"/>
   </Function>
-  <Function ID="10" Type="Collection" Name="show">
+  <Function ID="10" Type="Collection" Name="show" Path="Presented">
    <Step Number="0">1</Step>
    <Step Number="1">11</Step>
    <Step Number="2">9</Step>
   </Function>
   <Function ID="11" Type="RGBMatrix" Name="stringlight-speckles-blue" Path="show">
-   <Speed FadeIn="80" FadeOut="0" Duration="80"/>
+   <Speed FadeIn="100" FadeOut="0" Duration="100"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <Algorithm Type="Script">Fireworks</Algorithm>
@@ -1586,6 +1592,110 @@
    <Property Name="particleSteps" Value="25"/>
    <Property Name="rocketCount" Value="7"/>
    <Property Name="triggerPoint" Value="Centered Third"/>
+  </Function>
+  <Function ID="12" Type="RGBMatrix" Name="stringlight-ocean" Path="plasmas">
+   <Speed FadeIn="200" FadeOut="0" Duration="200"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Gradient</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+   <Property Name="orientation" Value="Radial"/>
+   <Property Name="presetIndex" Value="Ocean"/>
+   <Property Name="presetSize" Value="4"/>
+  </Function>
+  <Function ID="13" Type="RGBMatrix" Name="spots-ocean" Path="plasmas">
+   <Speed FadeIn="0" FadeOut="0" Duration="40"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Plasma</Algorithm>
+   <Color Index="0">4278205113</Color>
+   <Color Index="1">4278381311</Color>
+   <Color Index="2">4278190335</Color>
+   <Color Index="3">4294967040</Color>
+   <Color Index="4">4294967295</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>1</FixtureGroup>
+   <Property Name="presetIndex" Value="Ocean"/>
+   <Property Name="presetSize" Value="9"/>
+   <Property Name="ramp" Value="20"/>
+   <Property Name="stepsize" Value="15"/>
+  </Function>
+  <Function ID="14" Type="Collection" Name="all-ocean" Path="Presented">
+   <Step Number="0">13</Step>
+   <Step Number="1">12</Step>
+  </Function>
+  <Function ID="15" Type="RGBMatrix" Name="spots-white-mask" BlendMode="Mask">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Plain"/>
+   <Color Index="0">4294967295</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>1</FixtureGroup>
+  </Function>
+  <Function ID="16" Type="RGBMatrix" Name="amber-plasma" Path="fire">
+   <Speed FadeIn="0" FadeOut="0" Duration="40"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Plasma</Algorithm>
+   <Color Index="0">4284308829</Color>
+   <Color Index="1">4292664540</Color>
+   <Color Index="2">4278190080</Color>
+   <Color Index="3">4278190080</Color>
+   <Color Index="4">4278190080</Color>
+   <ControlMode>Amber</ControlMode>
+   <FixtureGroup>1</FixtureGroup>
+   <Property Name="presetSize" Value="20"/>
+   <Property Name="ramp" Value="21"/>
+   <Property Name="stepsize" Value="13"/>
+  </Function>
+  <Function ID="17" Type="RGBMatrix" Name="trails" Path="Masks" BlendMode="Subtractive">
+   <Speed FadeIn="0" FadeOut="0" Duration="80"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Waves</Algorithm>
+   <Color Index="0">4294967295</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+   <Property Name="orientation" Value="Horizontal"/>
+   <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="50"/>
+  </Function>
+  <Function ID="18" Type="RGBMatrix" Name="spots-rainbow" Path="plasmas">
+   <Speed FadeIn="0" FadeOut="0" Duration="40"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Plasma</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <Color Index="1">4278255360</Color>
+   <Color Index="2">4278190335</Color>
+   <Color Index="3">4294967040</Color>
+   <Color Index="4">4294967295</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>1</FixtureGroup>
+   <Property Name="presetIndex" Value="Rainbow"/>
+   <Property Name="presetSize" Value="20"/>
+   <Property Name="ramp" Value="16"/>
+   <Property Name="stepsize" Value="4"/>
+  </Function>
+  <Function ID="19" Type="RGBMatrix" Name="spots-abstract" Path="plasmas">
+   <Speed FadeIn="0" FadeOut="0" Duration="40"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Plasma</Algorithm>
+   <Color Index="0">4283789823</Color>
+   <Color Index="1">4278255615</Color>
+   <Color Index="2">4294902015</Color>
+   <Color Index="3">4294967040</Color>
+   <Color Index="4">4294967295</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>1</FixtureGroup>
+   <Property Name="presetIndex" Value="Abstract"/>
+   <Property Name="presetSize" Value="20"/>
+   <Property Name="ramp" Value="10"/>
+   <Property Name="stepsize" Value="7"/>
   </Function>
  </Engine>
  <VirtualConsole>
@@ -1605,59 +1715,16 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="10" Y="10" Width="605" Height="675"/>
+    <WindowState Visible="False" X="10" Y="10" Width="555" Height="650"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>True</ShowEnableButton>
+    <ShowEnableButton>False</ShowEnableButton>
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <SoloFrame Caption="Lichterkette" ID="2">
-     <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <WindowState Visible="True" X="15" Y="160" Width="200" Height="200"/>
-     <AllowChildren>True</AllowChildren>
-     <AllowResize>True</AllowResize>
-     <ShowHeader>True</ShowHeader>
-     <ShowEnableButton>True</ShowEnableButton>
-     <Mixing>False</Mixing>
-     <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
-     <Button Caption="Abstrakt" ID="5" Icon="">
-      <WindowState Visible="True" X="10" Y="45" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="7"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-     <Button Caption="Regenbogen" ID="6" Icon="">
-      <WindowState Visible="True" X="70" Y="45" Width="50" Height="50"/>
-      <Appearance>
-       <FrameStyle>None</FrameStyle>
-       <ForegroundColor>Default</ForegroundColor>
-       <BackgroundColor>Default</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Function ID="8"/>
-      <Action>Toggle</Action>
-      <Intensity Adjust="False">100</Intensity>
-     </Button>
-    </SoloFrame>
-    <Button Caption="all-fire" ID="3" Icon="">
-     <WindowState Visible="True" X="15" Y="50" Width="50" Height="50"/>
+    <Button Caption="Feuer" ID="3" Icon="">
+     <WindowState Visible="False" X="15" Y="50" Width="115" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1670,7 +1737,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="show" ID="4" Icon="">
-     <WindowState Visible="True" X="75" Y="50" Width="50" Height="50"/>
+     <WindowState Visible="False" X="140" Y="105" Width="125" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1682,7 +1749,63 @@
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
-    <SoloFrame Caption="Spots" ID="7">
+    <Button Caption="Regenbogen" ID="9" Icon="">
+     <WindowState Visible="False" X="15" Y="105" Width="115" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="8"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Abstrakt" ID="10" Icon="">
+     <WindowState Visible="False" X="140" Y="50" Width="125" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="7"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Ozean" ID="1" Icon="">
+     <WindowState Visible="False" X="275" Y="50" Width="135" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="14"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </SoloFrame>
+   <Frame Caption="Spots Farben" ID="20">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="575" Y="10" Width="435" Height="255"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Slider Caption="Rot" ID="21" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="False" X="10" Y="45" Width="60" Height="200"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1690,19 +1813,197 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="290" Y="160" Width="200" Height="200"/>
-     <AllowChildren>True</AllowChildren>
-     <AllowResize>True</AllowResize>
-     <ShowHeader>True</ShowHeader>
-     <ShowEnableButton>True</ShowEnableButton>
-     <Mixing>False</Mixing>
-     <Collapsed>False</Collapsed>
-     <Disabled>False</Disabled>
-    </SoloFrame>
-   </SoloFrame>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="20">0</Channel>
+      <Channel Fixture="21">0</Channel>
+      <Channel Fixture="22">0</Channel>
+      <Channel Fixture="23">0</Channel>
+      <Channel Fixture="24">0</Channel>
+      <Channel Fixture="25">0</Channel>
+      <Channel Fixture="26">0</Channel>
+      <Channel Fixture="27">0</Channel>
+      <Channel Fixture="28">0</Channel>
+      <Channel Fixture="29">0</Channel>
+      <Channel Fixture="30">0</Channel>
+      <Channel Fixture="31">0</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Grün" ID="22" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="False" X="70" Y="45" Width="60" Height="200"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="20">1</Channel>
+      <Channel Fixture="21">1</Channel>
+      <Channel Fixture="22">1</Channel>
+      <Channel Fixture="23">1</Channel>
+      <Channel Fixture="24">1</Channel>
+      <Channel Fixture="25">1</Channel>
+      <Channel Fixture="26">1</Channel>
+      <Channel Fixture="27">1</Channel>
+      <Channel Fixture="28">1</Channel>
+      <Channel Fixture="29">1</Channel>
+      <Channel Fixture="30">1</Channel>
+      <Channel Fixture="31">1</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Blau" ID="23" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="False" X="130" Y="45" Width="60" Height="200"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="20">2</Channel>
+      <Channel Fixture="21">2</Channel>
+      <Channel Fixture="22">2</Channel>
+      <Channel Fixture="23">2</Channel>
+      <Channel Fixture="24">2</Channel>
+      <Channel Fixture="25">2</Channel>
+      <Channel Fixture="26">2</Channel>
+      <Channel Fixture="27">2</Channel>
+      <Channel Fixture="28">2</Channel>
+      <Channel Fixture="29">2</Channel>
+      <Channel Fixture="30">2</Channel>
+      <Channel Fixture="31">2</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Warm" ID="24" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="False" X="245" Y="45" Width="60" Height="200"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="20">4</Channel>
+      <Channel Fixture="21">4</Channel>
+      <Channel Fixture="22">4</Channel>
+      <Channel Fixture="23">4</Channel>
+      <Channel Fixture="24">4</Channel>
+      <Channel Fixture="25">4</Channel>
+      <Channel Fixture="26">4</Channel>
+      <Channel Fixture="27">4</Channel>
+      <Channel Fixture="28">4</Channel>
+      <Channel Fixture="29">4</Channel>
+      <Channel Fixture="30">4</Channel>
+      <Channel Fixture="31">4</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Kalt" ID="25" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="False" X="190" Y="45" Width="60" Height="200"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="20">3</Channel>
+      <Channel Fixture="21">3</Channel>
+      <Channel Fixture="22">3</Channel>
+      <Channel Fixture="23">3</Channel>
+      <Channel Fixture="24">3</Channel>
+      <Channel Fixture="25">3</Channel>
+      <Channel Fixture="26">3</Channel>
+      <Channel Fixture="27">3</Channel>
+      <Channel Fixture="28">3</Channel>
+      <Channel Fixture="29">3</Channel>
+      <Channel Fixture="30">3</Channel>
+      <Channel Fixture="31">3</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Orange" ID="26" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="False" X="305" Y="45" Width="60" Height="200"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="20">5</Channel>
+      <Channel Fixture="21">5</Channel>
+      <Channel Fixture="22">5</Channel>
+      <Channel Fixture="23">5</Channel>
+      <Channel Fixture="24">5</Channel>
+      <Channel Fixture="25">5</Channel>
+      <Channel Fixture="26">5</Channel>
+      <Channel Fixture="27">5</Channel>
+      <Channel Fixture="28">5</Channel>
+      <Channel Fixture="29">5</Channel>
+      <Channel Fixture="30">5</Channel>
+      <Channel Fixture="31">5</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="UV" ID="27" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="False" X="365" Y="45" Width="60" Height="200"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="20">6</Channel>
+      <Channel Fixture="21">6</Channel>
+      <Channel Fixture="22">6</Channel>
+      <Channel Fixture="23">6</Channel>
+      <Channel Fixture="24">6</Channel>
+      <Channel Fixture="25">6</Channel>
+      <Channel Fixture="26">6</Channel>
+      <Channel Fixture="27">6</Channel>
+      <Channel Fixture="28">6</Channel>
+      <Channel Fixture="29">6</Channel>
+      <Channel Fixture="30">6</Channel>
+      <Channel Fixture="31">6</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+   </Frame>
   </Frame>
   <Properties>
-   <Size Width="1024" Height="698"/>
+   <Size Width="1024" Height="670"/>
    <GrandMaster Visible="1" ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
   </Properties>
  </VirtualConsole>
