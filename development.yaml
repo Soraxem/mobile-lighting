@@ -16,7 +16,7 @@ services:
       - "80:9999"  # QLC+ web server
     volumes:
       - ./qlc-configs:/data:rw
-      - ./qlc-fixtures:/usr/share/qlcplus/fixtures/custom:ro
+      - ./qlc-fixtures:/root/.qlcplus/fixtures:ro
     environment:
       - QLC_WEB_SERVER=true
       - WORKSPACE_FILE=/data/active.qxw

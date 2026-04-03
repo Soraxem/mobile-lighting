@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.4</Version>
@@ -310,6 +310,126 @@
    <Universe>11</Universe>
    <Address>150</Address>
    <Channels>150</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED 7C-7</Model>
+   <Mode>7 Channel Mode</Mode>
+   <ID>20</ID>
+   <Name>Spot #01</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED 7C-7</Model>
+   <Mode>7 Channel Mode</Mode>
+   <ID>21</ID>
+   <Name>Spot #02</Name>
+   <Universe>0</Universe>
+   <Address>12</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED 7C-7</Model>
+   <Mode>7 Channel Mode</Mode>
+   <ID>22</ID>
+   <Name>Spot #03</Name>
+   <Universe>0</Universe>
+   <Address>24</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED 7C-7</Model>
+   <Mode>7 Channel Mode</Mode>
+   <ID>23</ID>
+   <Name>Spot #04</Name>
+   <Universe>0</Universe>
+   <Address>36</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED 7C-7</Model>
+   <Mode>7 Channel Mode</Mode>
+   <ID>24</ID>
+   <Name>Spot #05</Name>
+   <Universe>0</Universe>
+   <Address>48</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED 7C-7</Model>
+   <Mode>7 Channel Mode</Mode>
+   <ID>25</ID>
+   <Name>Spot #06</Name>
+   <Universe>0</Universe>
+   <Address>60</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED 7C-7</Model>
+   <Mode>7 Channel Mode</Mode>
+   <ID>26</ID>
+   <Name>Spot #07</Name>
+   <Universe>0</Universe>
+   <Address>72</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED 7C-7</Model>
+   <Mode>7 Channel Mode</Mode>
+   <ID>27</ID>
+   <Name>Spot #08</Name>
+   <Universe>0</Universe>
+   <Address>84</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED 7C-7</Model>
+   <Mode>7 Channel Mode</Mode>
+   <ID>28</ID>
+   <Name>Spot #09</Name>
+   <Universe>0</Universe>
+   <Address>96</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED 7C-7</Model>
+   <Mode>7 Channel Mode</Mode>
+   <ID>29</ID>
+   <Name>Spot #10</Name>
+   <Universe>0</Universe>
+   <Address>108</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED 7C-7</Model>
+   <Mode>7 Channel Mode</Mode>
+   <ID>30</ID>
+   <Name>Spot #11</Name>
+   <Universe>0</Universe>
+   <Address>120</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Eurolite</Manufacturer>
+   <Model>LED 7C-7</Model>
+   <Mode>7 Channel Mode</Mode>
+   <ID>31</ID>
+   <Name>Spot #12</Name>
+   <Universe>0</Universe>
+   <Address>132</Address>
+   <Channels>7</Channels>
   </Fixture>
   <FixtureGroup ID="0">
    <Name>Stringlights</Name>
@@ -1315,21 +1435,157 @@
    <Head X="48" Y="19" Fixture="19">48</Head>
    <Head X="49" Y="19" Fixture="19">49</Head>
   </FixtureGroup>
-  <Function ID="0" Type="RGBMatrix" Name="Testing">
+  <FixtureGroup ID="1">
+   <Name>Spots</Name>
+   <Size X="6" Y="2"/>
+   <Head X="0" Y="0" Fixture="20">0</Head>
+   <Head X="1" Y="0" Fixture="21">0</Head>
+   <Head X="2" Y="0" Fixture="22">0</Head>
+   <Head X="3" Y="0" Fixture="23">0</Head>
+   <Head X="4" Y="0" Fixture="24">0</Head>
+   <Head X="5" Y="0" Fixture="25">0</Head>
+   <Head X="0" Y="1" Fixture="26">0</Head>
+   <Head X="1" Y="1" Fixture="27">0</Head>
+   <Head X="2" Y="1" Fixture="28">0</Head>
+   <Head X="3" Y="1" Fixture="29">0</Head>
+   <Head X="4" Y="1" Fixture="30">0</Head>
+   <Head X="5" Y="1" Fixture="31">0</Head>
+  </FixtureGroup>
+  <ChannelsGroup ID="0" Name="Spots Red" Value="0">20,0,21,0,22,0,23,0,24,0,25,0,26,0,27,0,28,0,29,0,30,0,31,0</ChannelsGroup>
+  <ChannelsGroup ID="1" Name="Spots Green" Value="0">20,1,21,1,22,1,23,1,24,1,25,1,26,1,27,1,28,1,29,1,30,1,31,1</ChannelsGroup>
+  <ChannelsGroup ID="2" Name="Spots Blue" Value="0">20,2,21,2,22,2,23,2,24,2,25,2,26,2,27,2,28,2,29,2,30,2,31,2</ChannelsGroup>
+  <Function ID="0" Type="RGBMatrix" Name="stringlight-fire" Path="plasmas">
    <Speed FadeIn="0" FadeOut="0" Duration="40"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Plasma</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <Color Index="1">4293288192</Color>
+   <Color Index="2">4294966528</Color>
+   <Color Index="3">4294901760</Color>
+   <Color Index="4">4278190080</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+   <Property Name="presetIndex" Value="User Defined"/>
+   <Property Name="presetSize" Value="20"/>
+   <Property Name="ramp" Value="13"/>
+   <Property Name="stepsize" Value="13"/>
+  </Function>
+  <Function ID="1" Type="RGBMatrix" Name="sequential-spots" Path="show">
+   <Speed FadeIn="160" FadeOut="0" Duration="410"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Stripes</Algorithm>
    <Color Index="0">4278255360</Color>
+   <Color Index="1">4278190335</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>1</FixtureGroup>
+   <Property Name="orientation" Value="Horizontal"/>
+  </Function>
+  <Function ID="2" Type="RGBMatrix" Name="spots-fire" Path="plasmas">
+   <Speed FadeIn="0" FadeOut="0" Duration="40"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Plasma</Algorithm>
+   <Color Index="0">4292420118</Color>
    <Color Index="1">4294945280</Color>
+   <Color Index="2">4294967040</Color>
+   <Color Index="3">4292420118</Color>
+   <Color Index="4">4286907396</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>1</FixtureGroup>
+   <Property Name="presetSize" Value="20"/>
+   <Property Name="ramp" Value="10"/>
+   <Property Name="stepsize" Value="1"/>
+  </Function>
+  <Function ID="3" Type="Collection" Name="all-fire">
+   <Step Number="0">2</Step>
+   <Step Number="1">0</Step>
+  </Function>
+  <Function ID="4" Type="RGBMatrix" Name="stringlight-glitter-mask" Path="plasmas" BlendMode="Subtractive">
+   <Speed FadeIn="0" FadeOut="0" Duration="60"/>
+   <Direction>Backward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Vertical fall</Algorithm>
+   <Color Index="0">4294967295</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+  </Function>
+  <Function ID="5" Type="RGBMatrix" Name="stringlight-abstract" Path="plasmas">
+   <Speed FadeIn="0" FadeOut="0" Duration="40"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Plasma</Algorithm>
+   <Color Index="0">4283789823</Color>
+   <Color Index="1">4278255615</Color>
+   <Color Index="2">4294902015</Color>
+   <Color Index="3">4294967040</Color>
+   <Color Index="4">4294967295</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+   <Property Name="presetIndex" Value="Abstract"/>
+   <Property Name="presetSize" Value="20"/>
+   <Property Name="ramp" Value="11"/>
+   <Property Name="stepsize" Value="21"/>
+  </Function>
+  <Function ID="6" Type="RGBMatrix" Name="stringlight-rainbow" Path="plasmas">
+   <Speed FadeIn="0" FadeOut="0" Duration="40"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Plasma</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <Color Index="1">4278255360</Color>
    <Color Index="2">4278190335</Color>
    <Color Index="3">4294967040</Color>
    <Color Index="4">4294967295</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetSize" Value="5"/>
-   <Property Name="ramp" Value="20"/>
-   <Property Name="stepsize" Value="25"/>
+   <Property Name="presetIndex" Value="Rainbow"/>
+   <Property Name="presetSize" Value="20"/>
+   <Property Name="ramp" Value="19"/>
+   <Property Name="stepsize" Value="14"/>
+  </Function>
+  <Function ID="7" Type="Collection" Name="stringlight-abstract-glitter">
+   <Step Number="0">5</Step>
+   <Step Number="1">4</Step>
+  </Function>
+  <Function ID="8" Type="Collection" Name="stringlight-rainbow-glitter">
+   <Step Number="0">6</Step>
+   <Step Number="1">4</Step>
+  </Function>
+  <Function ID="9" Type="RGBMatrix" Name="stringlight-spekles-green" Path="show">
+   <Speed FadeIn="80" FadeOut="0" Duration="80"/>
+   <Direction>Forward</Direction>
+   <RunOrder>PingPong</RunOrder>
+   <Algorithm Type="Script">Fireworks</Algorithm>
+   <Color Index="0">4278255360</Color>
+   <Color Index="1">4278190335</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+   <Property Name="particleCount" Value="16"/>
+   <Property Name="particleSteps" Value="25"/>
+   <Property Name="randomColor" Value="No"/>
+   <Property Name="rocketCount" Value="7"/>
+   <Property Name="triggerPoint" Value="Centered Third"/>
+  </Function>
+  <Function ID="10" Type="Collection" Name="show">
+   <Step Number="0">1</Step>
+   <Step Number="1">11</Step>
+   <Step Number="2">9</Step>
+  </Function>
+  <Function ID="11" Type="RGBMatrix" Name="stringlight-speckles-blue" Path="show">
+   <Speed FadeIn="80" FadeOut="0" Duration="80"/>
+   <Direction>Forward</Direction>
+   <RunOrder>PingPong</RunOrder>
+   <Algorithm Type="Script">Fireworks</Algorithm>
+   <Color Index="0">4278190335</Color>
+   <Color Index="1">4278190335</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+   <Property Name="particleCount" Value="16"/>
+   <Property Name="particleSteps" Value="25"/>
+   <Property Name="rocketCount" Value="7"/>
+   <Property Name="triggerPoint" Value="Centered Third"/>
   </Function>
  </Engine>
  <VirtualConsole>
@@ -1341,7 +1597,7 @@
     <BackgroundImage>None</BackgroundImage>
     <Font>Default</Font>
    </Appearance>
-   <SoloFrame Caption="Lichterketten" ID="0">
+   <SoloFrame Caption="Presets" ID="0">
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1349,7 +1605,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="35" Y="35" Width="410" Height="290"/>
+    <WindowState Visible="True" X="10" Y="10" Width="605" Height="675"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1357,8 +1613,51 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="Plasma" ID="1" Icon="">
-     <WindowState Visible="False" X="45" Y="75" Width="50" Height="50"/>
+    <SoloFrame Caption="Lichterkette" ID="2">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="15" Y="160" Width="200" Height="200"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Abstrakt" ID="5" Icon="">
+      <WindowState Visible="True" X="10" Y="45" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="7"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Regenbogen" ID="6" Icon="">
+      <WindowState Visible="True" X="70" Y="45" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="8"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </SoloFrame>
+    <Button Caption="all-fire" ID="3" Icon="">
+     <WindowState Visible="True" X="15" Y="50" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1366,14 +1665,44 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Function ID="0"/>
+     <Function ID="3"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
+    <Button Caption="show" ID="4" Icon="">
+     <WindowState Visible="True" X="75" Y="50" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="10"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <SoloFrame Caption="Spots" ID="7">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="290" Y="160" Width="200" Height="200"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Mixing>False</Mixing>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+    </SoloFrame>
    </SoloFrame>
   </Frame>
   <Properties>
-   <Size Width="1920" Height="1080"/>
+   <Size Width="1024" Height="698"/>
    <GrandMaster Visible="1" ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
   </Properties>
  </VirtualConsole>

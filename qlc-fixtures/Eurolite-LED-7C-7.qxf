@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.3</Version>
+  <Author>Samuel Hafen</Author>
+ </Creator>
+ <Manufacturer>Eurolite</Manufacturer>
+ <Model>LED 7C-7</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="ColdWhite" Preset="IntensityWhite"/>
+ <Channel Name="WarmWhite" Preset="IntensityWhite"/>
+ <Channel Name="Amber" Preset="IntensityAmber"/>
+ <Channel Name="UV" Preset="IntensityUV"/>
+ <Channel Name="Color macro" Preset="ColorMacro"/>
+ <Channel Name="Programs">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Programs</Capability>
+ </Channel>
+ <Channel Name="Whites" Preset="ColorMacro"/>
+ <Mode Name="12 Channel Mode">
+  <Channel Number="0" ActsOn="0">Master dimmer</Channel>
+  <Channel Number="1" ActsOn="1">Strobe</Channel>
+  <Channel Number="2" ActsOn="2">Red</Channel>
+  <Channel Number="3" ActsOn="3">Green</Channel>
+  <Channel Number="4" ActsOn="4">Blue</Channel>
+  <Channel Number="5" ActsOn="5">ColdWhite</Channel>
+  <Channel Number="6" ActsOn="6">WarmWhite</Channel>
+  <Channel Number="7" ActsOn="7">Amber</Channel>
+  <Channel Number="8" ActsOn="8">UV</Channel>
+  <Channel Number="9" ActsOn="9">Color macro</Channel>
+  <Channel Number="10" ActsOn="10">Programs</Channel>
+  <Channel Number="11" ActsOn="11">Whites</Channel>
+ </Mode>
+ <Mode Name="9 Channel Mode">
+  <Channel Number="0" ActsOn="0">Red</Channel>
+  <Channel Number="1" ActsOn="1">Green</Channel>
+  <Channel Number="2" ActsOn="2">Blue</Channel>
+  <Channel Number="3" ActsOn="3">ColdWhite</Channel>
+  <Channel Number="4" ActsOn="4">WarmWhite</Channel>
+  <Channel Number="5" ActsOn="5">Amber</Channel>
+  <Channel Number="6" ActsOn="6">UV</Channel>
+  <Channel Number="7" ActsOn="7">Master dimmer</Channel>
+  <Channel Number="8" ActsOn="8">Strobe</Channel>
+ </Mode>
+ <Mode Name="7 Channel Mode">
+  <Channel Number="0" ActsOn="0">Red</Channel>
+  <Channel Number="1" ActsOn="1">Green</Channel>
+  <Channel Number="2" ActsOn="2">Blue</Channel>
+  <Channel Number="3" ActsOn="3">ColdWhite</Channel>
+  <Channel Number="4" ActsOn="4">WarmWhite</Channel>
+  <Channel Number="5" ActsOn="5">Amber</Channel>
+  <Channel Number="6" ActsOn="6">UV</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>
